@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@700&family=Urbanist:wght@400;600;700&family=Varela&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Urbanist';
+}
+
+.hero{
+  background: url(https://media.istockphoto.com/id/1149775060/photo/lens-flare-and-bokeh-neon-colors-black-background.jpg?s=612x612&w=0&k=20&c=tOQ_P5zQSpOWAz_szHYi4TnR5g-iOXiPNmmTM2f6bmc=) center ;
+  margin-top: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.para-div{
+   animation: 2s ease-out 0s 1 sliderLeft;
+}
+.img-div{
+  animation: 2s ease-out 0s 1 sliderRight;
+}
+@keyframes sliderLeft {
+  0%{
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translate(0);
+  }
+  
+}
+@keyframes sliderRight {
+  0%{
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translate(0);
+  }
+  
+}

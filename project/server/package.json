@@ -1,0 +1,31 @@
+{
+    "dependencies": {
+        "axios": "^1.1.3",
+        "bcrypt": "^5.1.0",
+        "dotenv": "^16.3.1",
+        "mongodb": "^5.7.0",
+        "mongoose": "^7.4.2",
+        "multer": "^1.4.5-lts.1",
+        "nodemailer": "^6.9.3",
+        "nodemon": "^2.0.19",
+        "path": "^0.12.7"
+    },
+    "name": "server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "client-install": "npm install --prefix client",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "cd ../ && npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    
+    "author": "The techno tribe",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.2"
+    }
+}
